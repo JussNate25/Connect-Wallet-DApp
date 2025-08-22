@@ -1,3 +1,4 @@
+🔗 **Live Demo:** [Click here to view](https://jussnate25.github.io/connect-wallet-dapp/)
 # Connect Wallet DApp
 
 A simple decentralized application (DApp) that allows users to connect their MetaMask wallet and view their Ethereum address and balance.  
@@ -51,3 +52,4 @@ Twitter: [juss__NATE]
 📜 License
 
 This project is open source and available under the MIT License.
+Added Live demo link to README
