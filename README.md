@@ -1,41 +1,41 @@
 # Connect Wallet DApp
 
-A professional, secure DApp for connecting MetaMask, viewing your Ethereum address, balance (in ETH/USD), and network. Built with HTML, CSS, JS, Ethers.js, and Axios.
+A secure, responsive DApp to connect MetaMask (browser or mobile app), display Ethereum address, balance (ETH/USD), and network. Built with HTML, CSS, JavaScript, Ethers.js, and Axios.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Demo](https://img.shields.io/badge/Demo-Live-blue)](https://jussnate25.github.io/connect-wallet-dapp/)
+[![Demo](https://img.shields.io/badge/Demo-Live-blue)](https://jussnate25.github.io/Connect-Wallet-DApp/)
 
 ## Features
-- Connect/Disconnect MetaMask securely
-- Display truncated address, balance (ETH + USD via CoinGecko API), and network
-- Error handling and toast notifications
-- Responsive design for mobile/desktop
-- Basic tests with Node.js
+- Connect/disconnect MetaMask (supports mobile app via deep-linking)
+- Displays truncated address, balance (ETH/USD via CoinGecko), and network
+- Toast notifications for user feedback
+- Responsive for mobile/desktop
+- Basic tests included
 
 ## Tech Stack
 - **Frontend**: HTML5, CSS3, Vanilla JS
-- **Libraries**: Ethers.js (wallet integration), Axios (API)
+- **Libraries**: Ethers.js (wallet), Axios (API)
 - **Deployment**: GitHub Pages
 
 ## Installation
-1. Clone the repo: `git clone https://github.com/JussNate25/Connect-Wallet-DApp.git`
-2. Install dependencies: `npm install`
-3. Open `index.html` in a browser with MetaMask installed.
+1. Clone: `git clone https://github.com/JussNate25/Connect-Wallet-DApp.git`
+2. Install (optional): `npm install`
+3. Open `index.html` in a browser or MetaMask app.
 
 ## Usage
-- Click "Connect MetaMask" to link your wallet.
-- View details; disconnect if needed.
-- Run tests: `npm test`
+- Click "Connect MetaMask" to link wallet (opens app on mobile).
+- View address, balance, network.
+- Click "Disconnect" to reset.
 
 ## Demo
-![Screenshot](demo.png)
+![Screenshot](demo.png) <!-- Upload screenshot to repo -->
 
-## Security Notes
-- Tested on testnets; no real funds at risk.
+## Security
+- Tested on Sepolia testnet; no real ETH used.
 - No private keys stored; uses MetaMask for signing.
 
 ## Contributing
-Fork and PR! Follow best practices: semantic commits, tests.
+Fork and submit PRs. Use semantic commits (e.g., `feat: add feature`).
 
 ## License
 MIT © Omokanye Hamed
