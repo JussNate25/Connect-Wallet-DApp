@@ -1,0 +1,16 @@
+{
+  "name": "connect-wallet-dapp",
+  "version": "1.0.0",
+  "description": "A professional DApp for connecting MetaMask and viewing ETH balance.",
+  "main": "script.js",
+  "scripts": {
+    "start": "echo 'Open index.html in browser'",
+    "test": "node test.js"
+  },
+  "author": "Omokanye Hamed",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "ethers": "^6.13.2"
+  }
+}
