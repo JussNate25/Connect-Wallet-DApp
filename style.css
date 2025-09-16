@@ -1,68 +1,117 @@
+/* Import Inter font for professional typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* CSS Variables for consistent theming */
 :root {
-    --primary: #007bff;
-    --error: #ff0000;
-    --success: #28a745;
-    --bg: #f4f4f4;
-    --text: #333;
+    --primary: #1e90ff; /* Web3 blue for buttons */
+    --success: #28a745; /* Green for success toasts */
+    --error: #dc3545; /* Red for error toasts */
+    --bg-gradient: linear-gradient(135deg, #1a2a44 0%, #2c3e50 100%); /* Dark navy to gray gradient */
+    --container-bg: #ffffff; /* White container */
+    --text: #333333; /* Dark text for contrast */
+    --text-light: #ffffff; /* White text for dark backgrounds */
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+/* Global styles */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: var(--bg);
+    font-family: 'Inter', Arial, sans-serif;
+    background: var(--bg-gradient); /* Professional gradient background */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     color: var(--text);
 }
+
+/* Main container */
 .container {
     text-align: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 24px;
+    border-radius: 12px;
+    background: var(--container-bg);
+    box-shadow: var(--shadow);
     max-width: 90%;
     width: 400px;
+    transition: transform 0.3s ease;
 }
+
+.container:hover {
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Headings */
 h1 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--text);
 }
+
+/* Buttons */
 button {
     background: var(--primary);
-    color: white;
-    padding: 10px 20px;
+    color: var(--text-light);
+    padding: 12px 24px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    margin: 5px;
     font-size: 1rem;
+    font-weight: 600;
+    margin: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
+
 button:hover {
-    background: #0056b3;
+    background: #1565c0; /* Darker blue on hover */
+    transform: translateY(-1px);
 }
+
+/* Text displays */
 p {
-    margin: 10px 0;
+    margin: 12px 0;
+    font-size: 1rem;
+    font-weight: 400;
 }
+
+/* Toast notifications */
 .toast {
     position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 10px 20px;
-    border-radius: 4px;
-    color: white;
-    display: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    color: var(--text-light);
     font-size: 0.9rem;
+    font-weight: 500;
+    display: none;
+    box-shadow: var(--shadow);
 }
-.toast.success { background: var(--success); }
-.toast.error { background: var(--error); }
+
+.toast.success {
+    background: var(--success);
+}
+
+.toast.error {
+    background: var(--error);
+}
+
+/* Responsive design for mobile */
 @media (max-width: 600px) {
     .container {
-        padding: 15px;
+        padding: 16px;
         width: 95%;
     }
-    h1 { font-size: 1.2rem; }
-    button { font-size: 0.9rem; }
+    h1 {
+        font-size: 1.4rem;
+    }
+    button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+    p {
+        font-size: 0.9rem;
+    }
 }
