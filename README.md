@@ -1,55 +1,45 @@
-🔗 **Live Demo:** [Click here to view](https://jussnate25.github.io/connect-wallet-dapp/)
 # Connect Wallet DApp
 
-A simple decentralized application (DApp) that allows users to connect their MetaMask wallet and view their Ethereum address and balance.  
+A professional, secure DApp for connecting MetaMask, viewing your Ethereum address, balance (in ETH/USD), and network. Built with HTML, CSS, JS, Ethers.js, and Axios.
 
----
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Demo](https://img.shields.io/badge/Demo-Live-blue)](https://jussnate25.github.io/connect-wallet-dapp/)
 
-## 🚀 Features
-- Connect to MetaMask wallet  
-- Display connected wallet address  
-- Fetch and show ETH balance  
-- Built with **HTML, CSS, JavaScript, and Ethers.js**  
+## Features
+- Connect/Disconnect MetaMask securely
+- Display truncated address, balance (ETH + USD via CoinGecko API), and network
+- Error handling and toast notifications
+- Responsive design for mobile/desktop
+- Basic tests with Node.js
 
----
+## Tech Stack
+- **Frontend**: HTML5, CSS3, Vanilla JS
+- **Libraries**: Ethers.js (wallet integration), Axios (API)
+- **Deployment**: GitHub Pages
 
-## 📂 Project Structure
+## Installation
+1. Clone the repo: `git clone https://github.com/JussNate25/Connect-Wallet-DApp.git`
+2. Install dependencies: `npm install`
+3. Open `index.html` in a browser with MetaMask installed.
 
-connect-wallet-dapp/ │── index.html    # Main UI │── style.css     # Styling │── script.js     # Wallet logic
+## Usage
+- Click "Connect MetaMask" to link your wallet.
+- View details; disconnect if needed.
+- Run tests: `npm test`
 
----
+## Demo
+![Screenshot](demo.png)
 
-## ⚡ Live Demo
-👉 [Click here to try it](https://jussnate25.github.io/connect-wallet-dapp/)  
+## Security Notes
+- Tested on testnets; no real funds at risk.
+- No private keys stored; uses MetaMask for signing.
 
----
+## Contributing
+Fork and PR! Follow best practices: semantic commits, tests.
 
-## 🛠️ How to Run Locally
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/JussNate25/connect-wallet-dapp.git
+## License
+MIT © Omokanye Hamed
 
-2. Open index.html in your browser.
-
-
-3. Make sure you have MetaMask installed.
-
-
-
-
----
-
-👤 Author
-
-GitHub: JussNate25
-
-Twitter: [juss__NATE]
-
-
-
----
-
-📜 License
-
-This project is open source and available under the MIT License.
-Added Live demo link to README
+## Author
+- GitHub: [JussNate25](https://github.com/JussNate25)
+- X: [@juss_Nate](https://x.com/juss__NATE)
